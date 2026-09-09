@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Mykyta Melnik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;500;600&family=Inter:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Mykyta Melnik</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="availability.html">Availability</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="scope.html">Scope of practice</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <h1>Get in touch</h1>
+  <p>Send a message below, or write directly to <a href="mailto:mykyta.melnik.work@gmail.com">mykyta.melnik.work@gmail.com</a>. I aim to reply within [X business days].<span class="placeholder-tag">placeholder</span></p>
+
+  <!--
+    SETUP: replace YOUR_FORM_ID below with your real Formspree form ID.
+    1. Create a free account at https://formspree.io
+    2. Create a new form, get an ID like "abcd1234"
+    3. Replace the form action URL below with https://formspree.io/f/abcd1234
+  -->
+  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <label>
+      Name
+      <input type="text" name="name" required>
+    </label>
+    <label>
+      Email
+      <input type="email" name="_replyto" required>
+    </label>
+    <label>
+      Message
+      <textarea name="message" required></textarea>
+    </label>
+    <button class="submit" type="submit">Send message</button>
+  </form>
+
+  <hr class="rule">
+
+  <p style="color: var(--ink-muted); font-size: 0.92rem;">This form isn't monitored around the clock and isn't suitable for emergencies. If you're in crisis, please see the resources on the <a href="scope.html">scope of practice</a> page.</p>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>Frankfurt am Main, Germany</span>
+    <span>English &middot; Українська &middot; Русский</span>
+  </div>
+</footer>
+
+</body>
+</html>
