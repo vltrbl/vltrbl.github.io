@@ -133,6 +133,19 @@ main {
   flex-shrink: 0;
 }
 
+/* ---------- Portrait photo ---------- */
+
+.portrait {
+  display: block;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 25%;
+  background: var(--accent-soft);
+  box-shadow: 0 0 0 6px var(--surface), 0 0 0 7px var(--accent-soft);
+}
+
 /* ---------- Hero (homepage) ---------- */
 
 .hero-section {
@@ -168,6 +181,7 @@ main {
   .hero-section { padding: 36px 0 28px; gap: 32px; }
   .hero-visual { flex: 0 0 auto; width: 100%; max-width: 300px; margin: 0 auto; padding: 40px 24px 36px; }
   .hero-visual .avatar-placeholder { width: 168px; height: 168px; font-size: 2.8rem; }
+  .portrait { width: 180px; height: 180px; }
 }
 
 /* ---------- Buttons ---------- */
